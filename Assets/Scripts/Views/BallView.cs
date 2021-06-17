@@ -45,7 +45,6 @@ namespace Scripts.Views
                 case GameState.GameCycle:
                     _isMovementAllowed = true;
                     _positionConstraint.constraintActive = false;
-                    // _rigidbody.AddForce(_ballModel.MoveDirection.Value * _config.MaxSpeed, ForceMode.Impulse);
                     break;
                 case GameState.Lose:
                     _isMovementAllowed = false;

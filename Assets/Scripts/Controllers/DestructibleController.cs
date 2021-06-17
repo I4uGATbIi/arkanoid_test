@@ -56,7 +56,6 @@ namespace Scripts.Controllers
 
         private void ReplaceDestructible()
         {
-            //TODO: random placement pos
             _destructible.transform.position = _spawnBounds.GetRandomPointInside();
             _destructible.Show();
         }

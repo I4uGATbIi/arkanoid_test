@@ -28,7 +28,7 @@ namespace Scripts.Models
         public IReactiveProperty<GameState> State { get; set; }
         public IReactiveProperty<int> Score { get; set; }
 
-        //Alert Hardcode!
+        //TODO: Find out how to fix this Hardcode!
         private readonly Dictionary<GameState, GameState> NextPrevStateValidity = new Dictionary<GameState, GameState>()
         {
             {GameState.Start, GameState.Restart},
