@@ -12,6 +12,7 @@ namespace Scripts.Views
     {
         [Inject] private IGameModel _gameModel;
         [Inject] private IPlayerModel _playerModel;
+        [Inject] private PlayerConfig _playerConfig;
 
         private readonly CompositeDisposable _subscriptions = new CompositeDisposable();
 
@@ -54,7 +55,13 @@ namespace Scripts.Views
             if (!_isMovementAllowed)
                 return;
 
-            transform.position += transform.right * (_playerModel.Speed.Value * Time.deltaTime);
+            Vector3 newPos = transform.position + transform.right * (_playerModel.Speed.Value * Time.deltaTime);
+            newPos.x = Mathf.Clamp(
+                newPos.x,
+                StartPosition.x - _playerConfig.Bound,
+                StartPosition.x + _playerConfig.Bound
+            );
+            transform.position = newPos;
         }
 
         private void Reset()

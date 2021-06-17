@@ -15,7 +15,7 @@ namespace Scripts.Controllers
         [Inject] private IBallModel _ballModel;
         [Inject] private IGameModel _gameModel;
         [Inject] private PlayerConfig _config;
-        
+
         [SerializeField] private PlayerView _playerView;
 
         private bool _isShootEnabled;
@@ -58,8 +58,7 @@ namespace Scripts.Controllers
         {
             if (_isShootEnabled && Input.GetButton("Jump"))
             {
-                _ballModel.MoveDirection.Value =
-                    Vector3.up + (_playerView.StartPosition - transform.position).normalized;
+                _ballModel.MoveDirection.Value = Vector3.up;
                 _gameModel.SetState(GameState.GameCycle);
             }
 

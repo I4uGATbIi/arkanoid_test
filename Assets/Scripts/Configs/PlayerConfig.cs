@@ -6,5 +6,6 @@ namespace Configs
     public class PlayerConfig
     {
         public float MaxSpeed;
+        public float Bound;
     }
 }

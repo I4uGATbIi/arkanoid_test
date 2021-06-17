@@ -912,17 +912,9 @@ PrefabInstance:
       propertyPath: m_Sources.Array.data[0].sourceTransform
       value: 
       objectReference: {fileID: 8932214764594670699}
-    - target: {fileID: 4698651126518425410, guid: 2478a2a0f2e33fb47b360a799d1486d1, type: 3}
-      propertyPath: m_Constraints
-      value: 120
-      objectReference: {fileID: 0}
     - target: {fileID: 8462874533223977083, guid: 2478a2a0f2e33fb47b360a799d1486d1, type: 3}
       propertyPath: m_Name
       value: BonkBall
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462874533223977084, guid: 2478a2a0f2e33fb47b360a799d1486d1, type: 3}
-      propertyPath: m_Material
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8462874533223977087, guid: 2478a2a0f2e33fb47b360a799d1486d1, type: 3}
       propertyPath: m_RootOrder

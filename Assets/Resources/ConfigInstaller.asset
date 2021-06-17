@@ -16,3 +16,4 @@ MonoBehaviour:
     MaxSpeed: 5
   _playerConfig:
     MaxSpeed: 5
+    Bound: 2.75
